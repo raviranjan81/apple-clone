@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<body >
+    <div 
+        style="height: 100vh;width: 100vw; display: flex; justify-content: center;">
+        <div class="container ">
+            <form action=""></form>
+            <div class="row mt-5">
+                <div class="col-2"></div>
+                <div class="col-3">
+                    <label for="a">Book</label>
+                    <input type="text" class="form-control" id="a">
+                </div>
+                <div class="col-3">
+                    <label for="b">Book2</label>
+                    <input type="text" class="form-control" id="b">
+                </div>
+                <div class="col-3">
+                    <label for="c">Book3</label>
+                    <input type="text" class="form-control" id="c">
+                </div>
+                
+               <div class="align-items-center d-flex justify-content-center">
+                <a class="btn btn-primary mt-3 col-2 " href="#" role="button">submit</a>
+               </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let a=document.querySelector('#a');
+        let b=document.querySelector('#b');
+        let c=document.querySelector('#c');
+        
+       a.addEventListener('keyup',(e)=>{
+            let valueA=Number(a.value);
+            let d=valueA*50-49
+            let f=valueA*50-49
+            
+            b.setAttribute('value',d)
+            c.setAttribute('value',f)
+       })
+    </script>
+</body>
+
+</html>
